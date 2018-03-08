@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorToolbar"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/actionbar_menu"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorToolbar"
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="150dp"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/actionbar_mine"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@color/colorTransparent"
+                android:src="@drawable/icon_mine"
+                android:scaleType="fitCenter"
+                android:clickable="true"/>
+
+            <ImageButton
+                android:id="@+id/actionbar_center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:src="@drawable/icon_center"
+                android:scaleType="fitCenter"/>
+            <ImageButton
+                android:id="@+id/actionbar_relations"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:src="@drawable/icon_relasions"
+                android:scaleType="fitCenter"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/actionbar_search"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorToolbar"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+
+</LinearLayout>
