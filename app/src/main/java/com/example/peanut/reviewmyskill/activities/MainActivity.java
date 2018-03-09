@@ -2,14 +2,13 @@ package com.example.peanut.reviewmyskill.activities;
 
 
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 
@@ -36,6 +35,8 @@ public class MainActivity extends BaseActivity {
     private ImageButton actionbar_mine,actiongbar_center,actionbar_relasions,drawer_switch;
 
     private DrawerLayout drawerLayout;
+
+    private LinearLayout msg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,6 +97,15 @@ public class MainActivity extends BaseActivity {
             }
         });
 
+        msg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(view.getContext(),"我的消息",Toast.LENGTH_SHORT).show();
+                drawerLayout.closeDrawers();
+
+            }
+        });
+
     }
     //初始化控件
     public void initial(){
@@ -108,17 +118,19 @@ public class MainActivity extends BaseActivity {
         drawer_switch=findViewById(R.id.actionbar_darwer);
         drawerLayout=findViewById(R.id.drawer_layout);
 
+        msg=findViewById(R.id.menu_msg);
+
         actionbar_mine.setImageResource(R.drawable.icon_mine_press);
     }
 
+    //添加fragment
     public void initialFragmentList(){
         fragmentList.add(fragment_mine);
         fragmentList.add(fragment_center);
         fragmentList.add(fragment_relations);
-
-
     }
 
+    //重置顶部图片状态
     public void InitialActionbarImg(){
         actionbar_mine.setImageResource(R.drawable.icon_mine);
         actiongbar_center.setImageResource(R.drawable.icon_center);
