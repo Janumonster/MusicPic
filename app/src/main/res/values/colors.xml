@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorToolbar">#f58332</color>
     <color name="colorTransparent">#00000000</color>
+    <color name="colorMenuFontColor">#000</color>
 </resources>

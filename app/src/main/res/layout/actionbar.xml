@@ -2,70 +2,90 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="50dp"
+    android:layout_height="wrap_content"
     android:background="@color/colorToolbar"
-    android:orientation="horizontal">
-
-    <ImageButton
-        android:id="@+id/actionbar_menu"
-        android:layout_width="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_height="match_parent"
-        android:background="@color/colorToolbar"
-        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
-
+    android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        >
-
-        <LinearLayout
-            android:layout_margin="10dp"
-            android:layout_width="150dp"
-            android:layout_height="match_parent">
-
-            <ImageButton
-                android:id="@+id/actionbar_mine"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:background="@color/colorTransparent"
-                android:src="@drawable/icon_mine"
-                android:scaleType="fitCenter"
-                android:clickable="true"/>
-
-            <ImageButton
-                android:id="@+id/actionbar_center"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:background="@color/colorTransparent"
-                android:src="@drawable/icon_center"
-                android:scaleType="fitCenter"/>
-            <ImageButton
-                android:id="@+id/actionbar_relations"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:background="@color/colorTransparent"
-                android:src="@drawable/icon_relasions"
-                android:scaleType="fitCenter"/>
-
-        </LinearLayout>
-
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
 
     </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/actionbar_search"
-        android:layout_width="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_height="match_parent"
-        android:background="@color/colorToolbar"
-        app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageButton
+            android:id="@+id/actionbar_darwer"
+            android:layout_width="50dp"
+            android:padding="16dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center"
+            android:background="@color/colorTransparent"
+            android:src="@drawable/icon_drawer"
+            android:scaleType="fitCenter"/>
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_margin="15dp"
+                android:layout_width="180dp"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/actionbar_mine"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorTransparent"
+                    android:src="@drawable/icon_mine"
+                    android:scaleType="fitCenter"
+                    android:clickable="true"/>
+
+                <ImageButton
+                    android:id="@+id/actionbar_center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorTransparent"
+                    android:src="@drawable/icon_center"
+                    android:scaleType="fitCenter"/>
+                <ImageButton
+                    android:id="@+id/actionbar_relations"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorTransparent"
+                    android:src="@drawable/icon_relasions"
+                    android:scaleType="fitCenter"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/actionbar_search"
+            android:layout_width="50dp"
+            android:padding="15dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center"
+            android:background="@color/colorTransparent"
+            android:scaleType="fitEnd"
+            android:src="@drawable/icon_search" />
+
+    </LinearLayout>
+
 
 
 </LinearLayout>

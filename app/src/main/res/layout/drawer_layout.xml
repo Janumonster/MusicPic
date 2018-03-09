@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#efefef"
+            >
+
+            <FrameLayout
+                android:id="@+id/drawer_head"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="#54a9e1"
+                >
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#fff"
+                >
+
+                <LinearLayout
+                    android:id="@+id/menu_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/menu_msg"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="fitCenter"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的消息"
+                        android:textColor="@color/colorMenuFontColor"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu_vip"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/menu_vip"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="fitCenter"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VIP会员"
+                        android:textColor="@color/colorMenuFontColor"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu_market"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/menu_market"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="fitCenter"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="商城"
+                        android:textColor="@color/colorMenuFontColor"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu_freedata"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/menu_freedata"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="fitCenter"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="在线听歌免流量"
+                        android:textColor="@color/colorMenuFontColor"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#fff"
+                >
+
+                <LinearLayout
+                    android:id="@+id/menu_friends"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/menu_friends"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="fitCenter"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的好友"
+                        android:textColor="@color/colorMenuFontColor"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu_neighbor"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/menu_neighbor"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="fitCenter"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="附近的人"
+                        android:textColor="@color/colorMenuFontColor"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#fff"
+                >
+
+                <LinearLayout
+                    android:id="@+id/menu_theme"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/menu_theme"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="fitCenter"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="个性换肤"
+                        android:textColor="@color/colorMenuFontColor"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu_distinguish"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/menu_distingush"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="fitCenter"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="听歌识曲"
+                        android:textColor="@color/colorMenuFontColor"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu_timestop"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/menu_timestop"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="fitCenter"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="定时停止播放"
+                        android:textColor="@color/colorMenuFontColor"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu_scanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/menu_scanner"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="fitCenter"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="扫一扫"
+                        android:textColor="@color/colorMenuFontColor"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu_alarmclock"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/menu_alarmclock"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="fitCenter"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="音乐闹钟"
+                        android:textColor="@color/colorMenuFontColor"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu_drivingmode"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/menu_drivingmode"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="fitCenter"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="驾驶模式"
+                        android:textColor="@color/colorMenuFontColor"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu_cloud"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:orientation="horizontal"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/menu_cloud"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="fitCenter"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="音乐云盘"
+                        android:textColor="@color/colorMenuFontColor"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <!--分割线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d2d2d2">
+    </LinearLayout>
+
+    <!--底部菜单-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/menu_darkmode"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/menu_darkmode"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="夜间模式"
+                android:textColor="@color/colorMenuFontColor"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/menu_setting"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/menu_setting"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置"
+                android:textColor="@color/colorMenuFontColor"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_sign_out"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/menu_sign_out"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="退出"
+                android:textColor="@color/colorMenuFontColor"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

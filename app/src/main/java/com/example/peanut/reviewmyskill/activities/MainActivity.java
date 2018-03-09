@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
+import android.support.v4.widget.DrawerLayout;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -31,7 +33,9 @@ public class MainActivity extends BaseActivity {
     private Fragment_center fragment_center=new Fragment_center();
     private Fragment_relations fragment_relations=new Fragment_relations();
 
-    private ImageButton actionbar_mine,actiongbar_center,actionbar_relasions;
+    private ImageButton actionbar_mine,actiongbar_center,actionbar_relasions,drawer_switch;
+
+    private DrawerLayout drawerLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,13 +88,25 @@ public class MainActivity extends BaseActivity {
             }
         });
 
-    }
 
+        drawer_switch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                drawerLayout.openDrawer(Gravity.LEFT);
+            }
+        });
+
+    }
+    //初始化控件
     public void initial(){
         viewPager=findViewById(R.id.viewpager_main);
+
         actionbar_mine=findViewById(R.id.actionbar_mine);
         actiongbar_center=findViewById(R.id.actionbar_center);
         actionbar_relasions=findViewById(R.id.actionbar_relations);
+
+        drawer_switch=findViewById(R.id.actionbar_darwer);
+        drawerLayout=findViewById(R.id.drawer_layout);
 
         actionbar_mine.setImageResource(R.drawable.icon_mine_press);
     }
